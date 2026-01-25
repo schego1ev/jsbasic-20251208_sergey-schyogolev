@@ -4,6 +4,8 @@ export default class RibbonMenu {
   constructor(categories) {
     this.categories = categories;
     this.render();
+    this.initScroll();
+    this.ribbonSelect();
   }
 
   render() {
@@ -26,9 +28,6 @@ export default class RibbonMenu {
     });
 
     categoriesContainer.innerHTML = linksContainer;
-
-    this.initScroll();
-    this.ribbonSelect();
 
     return this.elem;
   }

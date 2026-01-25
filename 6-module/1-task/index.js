@@ -16,6 +16,7 @@ export default class UserTable {
   constructor(rows) {
     this.rows = rows;
     this.render();
+    this.deleteRow();
   }
 
   render() {
@@ -47,7 +48,6 @@ export default class UserTable {
     });
 
     tBody.innerHTML = resultRow;
-    this.deleteRow();
 
     return this.elem;
   }

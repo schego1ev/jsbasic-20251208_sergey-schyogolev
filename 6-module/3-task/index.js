@@ -4,6 +4,8 @@ export default class Carousel {
   constructor(slides) {
     this.slides = slides;
     this.render();
+    this.addToCart();
+    this.initCarousel();
   }
 
   render() {
@@ -36,9 +38,6 @@ export default class Carousel {
 
     carouselContainer.innerHTML = slidesContainer;
     
-    this.addToCart();
-    this.initCarousel();
-
     return this.elem;
   }
 

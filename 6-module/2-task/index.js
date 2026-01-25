@@ -4,6 +4,7 @@ export default class ProductCard {
   constructor(product) {
     this.product = product;
     this.render();
+    this.addToCart();
   }
 
   render() {
@@ -21,8 +22,6 @@ export default class ProductCard {
         </div>
       </div>
     `);
-    
-    this.addToCart();
     
     return this.elem;
   }
